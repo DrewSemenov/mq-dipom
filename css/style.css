@@ -85,26 +85,25 @@ body {
 
 .mobile-menu {
   width: 24px;
-  height: 4px;
-  background-color: #ffffff;
+  height: 20px;
   margin-bottom: 16px;
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
 
   align-self: end;
+
+  cursor: pointer;
 }
 
-.mobile-menu::before,
-.mobile-menu::after {
+.mobile-menu::before {
   content: "";
   display: block;
   width: 24px;
   height: 4px;
   background-color: #ffffff;
-  position: relative;
-  bottom: -8px;
-}
 
-.mobile-menu::after {
-  bottom: -12px;
+  position: relative;
+  top: 4px;
 }
 
 .header-inner {

@@ -1,5 +1,5 @@
 :root {
-  --color-gold: #b59f5b;
+  --color-focus: #b59f5b;
 }
 
 @font-face {
@@ -86,7 +86,7 @@ body {
 .tag {
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--color-gold);
+  color: var(--color-focus);
 }
 
 .tag:hover {
@@ -249,7 +249,7 @@ body {
 .trend-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px 20px;
 }
 
 .trend-tag {
@@ -262,7 +262,7 @@ body {
 }
 
 .trend-text-link:hover {
-  color: var(--color-gold);
+  color: var(--color-focus);
 }
 
 /* main ==================== */
@@ -293,10 +293,12 @@ body {
 .post-title {
   margin-bottom: 20px;
   font-size: 16px;
+
+  cursor: pointer;
 }
 
 .post-title:hover {
-  color: var(--color-gold);
+  color: var(--color-focus);
 }
 
 .post-info {
@@ -369,7 +371,7 @@ body {
 }
 
 .sidebar-field:focus {
-  outline: 1px solid var(--color-gold);
+  outline: 1px solid var(--color-focus);
   outline-offset: -1px;
 }
 
@@ -385,7 +387,7 @@ body {
 
   cursor: pointer;
 
-  background-color: var(--color-gold);
+  background-color: var(--color-focus);
 }
 
 .sidebar-button:hover {
@@ -434,7 +436,7 @@ body {
 }
 
 .sidebar-tag:hover {
-  border-color: var(--color-gold);
+  border-color: var(--color-focus);
 }
 
 /* themes ==================== */
@@ -458,12 +460,134 @@ body {
 }
 
 .sidebar-theme-link:hover {
-  color: var(--color-gold);
+  color: var(--color-focus);
 }
 
 .sidebar-theme-count {
   font-size: 12px;
   font-weight: bold;
   vertical-align: super;
-  color: var(--color-gold);
+  color: var(--color-focus);
+}
+
+/* shop ==================== */
+
+.shop {
+  margin-bottom: 40px;
+}
+
+.card-image-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-content {
+  position: relative;
+  top: -30px;
+  padding: 50px 20px 25px 20px;
+  border: 3px solid var(--color-focus);
+
+  line-height: 22px;
+}
+
+.card-title {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  margin-bottom: 25px;
+}
+
+.card-text {
+  font-size: 15px;
+}
+
+.card-link-description {
+  color: var(--color-focus);
+}
+
+.card-link-description:hover {
+  text-decoration: underline;
+}
+
+.card-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.card-price {
+  font-weight: bold;
+  line-height: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.card-price-normal {
+  text-decoration: line-through;
+}
+
+.card-price-current {
+  font-size: 20px;
+}
+
+.currency-ru::after {
+  content: "\20BD";
+  margin-left: 5px;
+}
+
+.link-to-shop {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 14px 28px;
+  background-color: var(--color-focus);
+}
+
+.link-to-shop:hover {
+  background-color: #323232;
+}
+
+/* footer ==================== */
+
+.footer {
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f4f7f6;
+}
+
+.socials-wrapper {
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
+.social-dribbble {
+  background-image: url("../svg/001-dribbble.svg");
+}
+
+.social-pinterest {
+  background-image: url("../svg/001-pinterest.svg");
+}
+
+.social-tumblr {
+  background-image: url("../svg/003-tumblr.svg");
 }

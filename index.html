@@ -42,6 +42,7 @@
                   name="subscribe"
                   id="yes"
                   class="field-radio visually-hidden"
+                  required
                 />
                 <span class="radio-text">Да</span>
               </label>
@@ -51,6 +52,7 @@
                   name="subscribe"
                   id="no"
                   class="field-radio visually-hidden"
+                  required
                 />
                 <span class="radio-text">Нет</span>
               </label>
@@ -64,6 +66,7 @@
               rows="5"
               class="popup-form-textarea field-form"
               placeholder="Может, больше рецептов?"
+              required
             ></textarea>
           </label>
           <button class="popup-form-button button" type="submit">
@@ -75,8 +78,8 @@
     <!-- header -->
     <header class="header">
       <div class="container header-container">
-        <div class="mobile-menu"></div>
-        <div class="header-inner">
+        <div class="menu-navigation">
+          <div class="mobile-menu menu-active"></div>
           <div class="logo-wrapper">
             <a href="" class="link logo-link">
               <svg
@@ -97,10 +100,32 @@
               </svg>
             </a>
           </div>
-          <h1 class="title header-title">
-            Блог о творчестве, спорте, и образе жизни
-          </h1>
+          <nav class="desc-navigation">
+            <ul class="desc-navigation-list">
+              <li class="desc-navigation-item">
+                <a href="#0" class="desc-navigation-link link">главная</a>
+              </li>
+              <li class="desc-navigation-item">
+                <a href="#0" class="desc-navigation-link link">посты</a>
+              </li>
+              <li class="desc-navigation-item">
+                <a href="#0" class="desc-navigation-link link">ствтьи</a>
+              </li>
+              <li class="desc-navigation-item">
+                <a href="#0" class="desc-navigation-link link">теги</a>
+              </li>
+              <li class="desc-navigation-item">
+                <a href="#0" class="desc-navigation-link link">темы</a>
+              </li>
+              <li class="desc-navigation-item">
+                <a href="#0" class="desc-navigation-link link">контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+        <h1 class="title header-title">
+          Блог о творчестве, спорте, и образе жизни
+        </h1>
       </div>
     </header>
 
@@ -382,7 +407,7 @@
                     10 июня 2019
                   </time>
                 </address>
-                <h3 class="title post-title">
+                <h3 class="title post-title latest-post-title">
                   <a href="#0" class="link">
                     10 мест, ради которых стоит проснуться</a
                   >
@@ -417,7 +442,7 @@
                     10 июня 2019
                   </time>
                 </address>
-                <h3 class="title post-title">
+                <h3 class="title post-title latest-post-title">
                   <a href="#0" class="link">
                     как мы превратили классное место в балкон
                   </a>
@@ -434,7 +459,7 @@
                     10 июня 2019
                   </time>
                 </address>
-                <h3 class="title post-title">
+                <h3 class="title post-title latest-post-title">
                   <a href="#0" class="link">Кулинарный подход к науке</a>
                 </h3>
               </div>
@@ -452,7 +477,7 @@
                     10 июня 2019
                   </time>
                 </address>
-                <h3 class="title post-title">
+                <h3 class="title post-title latest-post-title">
                   <a href="#0" class="link">
                     лучшие прически для распущенных волос
                   </a>
@@ -564,10 +589,24 @@
         <div class="shop-cards">
           <article class="card">
             <figure class="card-image-wrapper">
-              <img
-                src="./images/shop-item-mobile1.jpg"
-                alt="подушки на диван"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/shop-item-desk1.jpg"
+                />
+                <source
+                  media="(min-width: 641px)"
+                  srcset="./images/shop-item-tablet1.jpg"
+                />
+                <source
+                  media="(max-width: 640px)"
+                  srcset="./images/shop-item-mobile1.jpg"
+                />
+                <img
+                  src="./images/shop-item-mobile1.jpg"
+                  alt="подушки на диван"
+                />
+              </picture>
             </figure>
             <div class="card-content">
               <h3 class="title card-title">подушки на диван</h3>
@@ -588,7 +627,24 @@
           </article>
           <article class="card">
             <figure class="card-image-wrapper">
-              <img src="./images/shop-item-mobile2.jpg" alt="Кукла «Зайчик»" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/shop-item-desk2.jpg"
+                />
+                <source
+                  media="(min-width: 641px)"
+                  srcset="./images/shop-item-tablet2.jpg"
+                />
+                <source
+                  media="(max-width: 640px)"
+                  srcset="./images/shop-item-mobile2.jpg"
+                />
+                <img
+                  src="./images/shop-item-mobile2.jpg"
+                  alt="Кукла «Зайчик»"
+                />
+              </picture>
             </figure>
             <div class="card-content">
               <h3 class="title card-title">Кукла «Зайчик»</h3>
@@ -612,10 +668,25 @@
           </article>
           <article class="card">
             <figure class="card-image-wrapper">
-              <img
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/shop-item-desk3.jpg"
+                />
+                <source
+                  media="(min-width: 641px)"
+                  srcset="./images/shop-item-tablet3.jpg"
+                />
+                <source
+                  media="(max-width: 640px)"
+                  srcset="./images/shop-item-mobile3.jpg"
+                />
+                <img
                 src="./images/shop-item-mobile3.jpg"
                 alt="Шестиугольная рамка"
               />
+              <picture>
+              
             </figure>
             <div class="card-content">
               <h3 class="title card-title">Шестиугольная рамка</h3>

@@ -1,5 +1,6 @@
 :root {
   --color-focus: #b59f5b;
+  --color-button-hover: #323232;
 }
 
 @font-face {
@@ -51,10 +52,19 @@ body {
   color: #0f0d0e;
 }
 
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
 .container {
   padding: 0 15px;
 
-  max-width: 640px;
+  min-width: 360px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -108,10 +118,153 @@ body {
   overflow: hidden;
 }
 
+/* popup ===================== */
+
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  padding: 60px 15px 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-active {
+  display: flex;
+}
+
+.popup {
+  /* min-width: 360px; */
+  max-width: 640px;
+  position: relative;
+  padding: 30px 25px;
+  background-color: #ffffff;
+}
+
+.button-close {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  width: 28px;
+  height: 28px;
+
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  background-image: url("../svg/form-x.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popup-title {
+  padding-top: 0;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.field-form {
+  opacity: 0.5;
+  background-color: #f4f7f6;
+  border: none;
+
+  font-size: inherit;
+}
+
+.select-form {
+  padding: 15px 40px 15px 20px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.label-select {
+  position: relative;
+  display: flex;
+}
+
+.arrow {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 10px;
+  height: 45px;
+  background-image: url("../svg/form-arrows.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.select-form:focus {
+  outline: 1px solid var(--color-focus);
+}
+
+.popup-form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.radio-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.radio-text::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url("../svg/form-empty-circle.svg");
+  background-size: cover;
+}
+
+.field-radio:checked + .radio-text::before {
+  background-image: url("../svg/form-circle.svg");
+}
+
+.popup-form-textarea {
+  padding: 20px;
+}
+
+.popup-form-button {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 14px 28px;
+  border: none;
+  background-color: var(--color-focus);
+}
+
+.popup-form-button:hover {
+  background-color: var(--color-button-hover);
+}
+
 /* header ==================== */
 
 .header {
-  width: 100%;
+  min-width: 360px;
   min-height: 100vh;
 
   background: url("../images/banner-mobile.jpg");
@@ -128,6 +281,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  min-width: 360px;
 
   background-color: #000000;
   opacity: 0.6;
@@ -148,6 +302,7 @@ body {
 }
 
 .mobile-menu {
+  display: none;
   width: 24px;
   height: 20px;
   margin-bottom: 16px;
@@ -157,6 +312,10 @@ body {
   align-self: end;
 
   cursor: pointer;
+}
+
+.menu-active {
+  display: block;
 }
 
 .mobile-menu::before {
@@ -187,6 +346,10 @@ body {
 }
 
 /* trends ==================== */
+
+.trends {
+  min-width: 360px;
+}
 
 .trends-list {
   display: flex;
@@ -391,7 +554,7 @@ body {
 }
 
 .sidebar-button:hover {
-  background-color: #323232;
+  background-color: var(--color-button-hover);
 }
 
 .search-form {
@@ -549,13 +712,10 @@ body {
 }
 
 .link-to-shop:hover {
-  background-color: #323232;
+  background-color: var(--color-button-hover);
 }
 
 /* footer ==================== */
-
-.footer {
-}
 
 .socials-wrapper {
   height: 80px;
@@ -577,7 +737,14 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  background-size: 20px;
+  background-size: cover;
+
+  cursor: pointer;
+}
+
+.social a {
+  display: block;
+  height: 100%;
 }
 
 .social-dribbble {

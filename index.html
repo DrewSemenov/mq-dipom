@@ -5,9 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./index.js"></script>
     <title>MQ-Diplom</title>
   </head>
   <body>
+    <!-- popup -->
+    <div class="popup-wrapper">
+      <div class="popup">
+        <button class="button-close"></button>
+        <h2 class="title section-title popup-title">ваш фидбек</h2>
+        <form action="#0" class="popup-form">
+          <label class="popup-form-label label-select"
+            >Как часто Вы заходите на сайт?
+            <select name="select-form" class="field field-form select-form">
+              <option value="dayli" class="select-value" selected>
+                Почти каждый день
+              </option>
+              <option value="week" class="select-value">
+                Раз в несколько дней
+              </option>
+              <option value="month" class="select-value">
+                Раз в несколько недель
+              </option>
+              <option value="year" class="select-value">
+                Несколько раз в год
+              </option>
+            </select>
+            <div class="arrow"></div>
+          </label>
+          <div class="popup-form-label">
+            Вы подписаны на e-mail рассылку?
+            <div class="radio-wrapper">
+              <label class="popup-form-label form-radio-label">
+                <input
+                  type="radio"
+                  name="subscribe"
+                  id="yes"
+                  class="field-radio visually-hidden"
+                />
+                <span class="radio-text">Да</span>
+              </label>
+              <label class="popup-label form-radio-label">
+                <input
+                  type="radio"
+                  name="subscribe"
+                  id="no"
+                  class="field-radio visually-hidden"
+                />
+                <span class="radio-text">Нет</span>
+              </label>
+            </div>
+          </div>
+          <label class="popup-form-label"
+            >Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+            <textarea
+              name="form-textarea"
+              id="form-textarea"
+              rows="5"
+              class="popup-form-textarea field-form"
+              placeholder="Может, больше рецептов?"
+            ></textarea>
+          </label>
+          <button class="popup-form-button button" type="submit">
+            отправить
+          </button>
+        </form>
+      </div>
+    </div>
     <!-- header -->
     <header class="header">
       <div class="container header-container">

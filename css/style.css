@@ -555,6 +555,9 @@ body {
 /* footer ==================== */
 
 .footer {
+}
+
+.socials-wrapper {
   height: 80px;
 
   display: flex;
@@ -564,10 +567,7 @@ body {
   background-color: #f4f7f6;
 }
 
-.socials-wrapper {
-}
-
-.socials {
+.socials-list {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -590,4 +590,13 @@ body {
 
 .social-tumblr {
   background-image: url("../svg/003-tumblr.svg");
+}
+
+.copyright {
+  padding: 50px;
+
+  font-size: 12px;
+  color: #999999;
+  font-weight: bold;
+  text-align: center;
 }

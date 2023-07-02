@@ -865,6 +865,10 @@ textarea {
     padding: 50px 0;
   }
 
+  .popup-title {
+    padding: 0 0 50px;
+  }
+
   .main {
     max-width: 700px;
   }

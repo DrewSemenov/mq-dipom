@@ -939,6 +939,7 @@ textarea {
 
     display: flex;
     flex-direction: column;
+    min-height: auto;
   }
 
   .menu-navigation {

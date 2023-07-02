@@ -925,6 +925,7 @@ textarea {
   }
 
   .header {
+    min-height: 450px;
     background-image: url("../images/banner-bg.jpg");
   }
 

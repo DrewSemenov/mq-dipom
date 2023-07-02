@@ -8,73 +8,77 @@
     <script defer src="./index.js"></script>
     <title>MQ-Diplom</title>
   </head>
+
   <body>
     <!-- popup -->
     <div class="popup-wrapper">
       <div class="popup">
         <button class="button-close"></button>
-        <h2 class="title section-title popup-title">ваш фидбек</h2>
-        <form action="#0" class="popup-form">
-          <label class="popup-form-label label-select"
-            >Как часто Вы заходите на сайт?
-            <select name="select-form" class="field field-form select-form">
-              <option value="dayli" class="select-value" selected>
-                Почти каждый день
-              </option>
-              <option value="week" class="select-value">
-                Раз в несколько дней
-              </option>
-              <option value="month" class="select-value">
-                Раз в несколько недель
-              </option>
-              <option value="year" class="select-value">
-                Несколько раз в год
-              </option>
-            </select>
-            <div class="arrow"></div>
-          </label>
-          <div class="popup-form-label">
-            Вы подписаны на e-mail рассылку?
-            <div class="radio-wrapper">
-              <label class="popup-form-label form-radio-label">
-                <input
-                  type="radio"
-                  name="subscribe"
-                  id="yes"
-                  class="field-radio visually-hidden"
-                  required
-                />
-                <span class="radio-text">Да</span>
-              </label>
-              <label class="popup-label form-radio-label">
-                <input
-                  type="radio"
-                  name="subscribe"
-                  id="no"
-                  class="field-radio visually-hidden"
-                  required
-                />
-                <span class="radio-text">Нет</span>
-              </label>
+        <div class="popup-inner">
+          <h2 class="title section-title popup-title">ваш фидбек</h2>
+          <form action="#0" class="popup-form">
+            <label class="popup-form-label label-select"
+              >Как часто Вы заходите на сайт?
+              <select name="select-form" class="field field-form select-form">
+                <option value="dayli" class="select-value" selected>
+                  Почти каждый день
+                </option>
+                <option value="week" class="select-value">
+                  Раз в несколько дней
+                </option>
+                <option value="month" class="select-value">
+                  Раз в несколько недель
+                </option>
+                <option value="year" class="select-value">
+                  Несколько раз в год
+                </option>
+              </select>
+              <span class="arrow"></span>
+            </label>
+            <div class="popup-form-label">
+              Вы подписаны на e-mail рассылку?
+              <div class="radio-wrapper">
+                <label class="popup-form-label form-radio-label">
+                  <input
+                    type="radio"
+                    name="subscribe"
+                    id="yes"
+                    class="field-radio visually-hidden"
+                    required
+                  />
+                  <span class="radio-text">Да</span>
+                </label>
+                <label class="popup-label form-radio-label">
+                  <input
+                    type="radio"
+                    name="subscribe"
+                    id="no"
+                    class="field-radio visually-hidden"
+                    required
+                  />
+                  <span class="radio-text">Нет</span>
+                </label>
+              </div>
             </div>
-          </div>
-          <label class="popup-form-label"
-            >Расскажите, какой контент вы хотели бы видеть на нашем сайте?
-            <textarea
-              name="form-textarea"
-              id="form-textarea"
-              rows="5"
-              class="popup-form-textarea field-form"
-              placeholder="Может, больше рецептов?"
-              required
-            ></textarea>
-          </label>
-          <button class="popup-form-button button" type="submit">
-            отправить
-          </button>
-        </form>
+            <label class="popup-form-label"
+              >Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+              <textarea
+                name="form-textarea"
+                id="form-textarea"
+                rows="5"
+                class="popup-form-textarea field-form"
+                placeholder="Может, больше рецептов?"
+                required
+              ></textarea>
+            </label>
+            <button class="popup-form-button button" type="submit">
+              отправить
+            </button>
+          </form>
+        </div>
       </div>
     </div>
+
     <!-- header -->
     <header class="header">
       <div class="container header-container">
@@ -134,7 +138,7 @@
       <h2 class="title section-title">сейчас в тренде</h2>
       <div class="trends-list">
         <article class="trend">
-          <div class="container trend-container">
+          <div class="trend-container">
             <div class="trend-content">
               <ul class="trend-tags">
                 <li class="trend-tag tag">
@@ -144,32 +148,32 @@
                   <a href="#0" class="trend-tag-link link">interior</a>
                 </li>
               </ul>
-              <p class="trend-text">
+              <h3 class="trend-text">
                 <a href="#0" class="trend-text-link link"
                   >сейчас в тренде: сад на подоконнике</a
                 >
-              </p>
+              </h3>
             </div>
           </div>
         </article>
         <article class="trend">
-          <div class="container trend-container">
+          <div class="trend-container">
             <div class="trend-content">
               <ul class="trend-tags">
                 <li class="trend-tag tag">
                   <a href="#0" class="trend-tag-link link">food</a>
                 </li>
               </ul>
-              <p class="trend-text">
+              <h3 class="trend-text">
                 <a href="#0" class="trend-text-link link">
                   сыры на красивых картинках из интернета: какие они на вкус?</a
                 >
-              </p>
+              </h3>
             </div>
           </div>
         </article>
         <article class="trend">
-          <div class="container trend-container">
+          <div class="trend-container">
             <div class="trend-content">
               <ul class="trend-tags">
                 <li class="trend-tag tag">
@@ -179,16 +183,16 @@
                   <a href="#0" class="trend-tag-link link">travel</a>
                 </li>
               </ul>
-              <p class="trend-text">
+              <h3 class="trend-text">
                 <a href="#0" class="trend-text-link link"
                   >собираемся в первый поход в горы</a
                 >
-              </p>
+              </h3>
             </div>
           </div>
         </article>
         <article class="trend">
-          <div class="container trend-container">
+          <div class="trend-container">
             <div class="trend-content">
               <ul class="trend-tags">
                 <li class="trend-tag tag">
@@ -198,11 +202,11 @@
                   <a href="#0" class="trend-tag-link link">health</a>
                 </li>
               </ul>
-              <p class="trend-text">
+              <h3 class="trend-text">
                 <a href="#0" class="trend-text-link link">
                   сейчас в тренде: сколько витамина с в лимонах?</a
                 >
-              </p>
+              </h3>
             </div>
           </div>
         </article>
@@ -682,11 +686,10 @@
                   srcset="./images/shop-item-mobile3.jpg"
                 />
                 <img
-                src="./images/shop-item-mobile3.jpg"
-                alt="Шестиугольная рамка"
-              />
-              <picture>
-              
+                  src="./images/shop-item-mobile3.jpg"
+                  alt="Шестиугольная рамка"
+                />
+              </picture>
             </figure>
             <div class="card-content">
               <h3 class="title card-title">Шестиугольная рамка</h3>

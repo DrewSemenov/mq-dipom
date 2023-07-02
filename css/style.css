@@ -121,7 +121,7 @@ textarea {
 /* popup ===================== */
 
 .popup-wrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -131,8 +131,9 @@ textarea {
   align-items: center;
   justify-content: center;
 
+  height: auto;
   min-height: 100vh;
-  padding: 60px 15px 25px;
+  padding: 25px 15px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -140,20 +141,28 @@ textarea {
   display: flex;
 }
 
+.popup-active-block {
+  display: block;
+}
+
 .popup {
-  /* min-width: 360px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup-inner {
   max-width: 640px;
   position: relative;
+  z-index: 110;
   padding: 30px 25px;
   background-color: #ffffff;
 }
 
 .button-close {
-  position: absolute;
-  top: -35px;
-  right: 0;
   width: 28px;
   height: 28px;
+  align-self: end;
 
   color: #ffffff;
   border: none;
@@ -264,6 +273,7 @@ textarea {
 /* header ==================== */
 
 .header {
+  position: relative;
   min-width: 360px;
   min-height: 100vh;
 
@@ -280,7 +290,7 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: inherit;
+  height: 100%;
 
   background-color: #000000;
   opacity: 0.6;
@@ -398,7 +408,7 @@ textarea {
 
 .trend-container {
   width: 100%;
-  padding-bottom: 15px;
+  padding: 15px;
 }
 
 .trend-content {
@@ -765,6 +775,21 @@ textarea {
   text-align: center;
 }
 
+/* media ===================== */
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .trends-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4px;
+  }
+
+  .trend {
+    width: calc(50% - 2px);
+  }
+}
+
 @media (min-width: 641px) {
   .section-title {
     font-size: 18px;
@@ -811,9 +836,14 @@ textarea {
   }
 
   .trends-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4px;
+  }
+
+  .trend {
+    width: calc(50% - 2px);
   }
 
   .trend-container {
@@ -879,6 +909,12 @@ textarea {
   }
 }
 
+@media (min-width: 800px) and (max-width: 1199px) and (orientation: landscape) {
+  .trend {
+    width: calc(25% - 4px);
+  }
+}
+
 @media (min-width: 1200px) {
   .section-title {
     font-size: 20px;
@@ -933,10 +969,8 @@ textarea {
     max-width: 700px;
   }
 
-  .trends-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3px;
+  .trend {
+    width: calc(25% - 4px);
   }
 
   .trend-container {

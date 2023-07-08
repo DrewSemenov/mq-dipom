@@ -13,7 +13,9 @@
     <!-- popup -->
     <div class="popup-wrapper">
       <div class="popup">
-        <button class="button-close"></button>
+        <button class="button-close">
+          <span class="visually-hidden">закрыть</span>
+        </button>
         <div class="popup-inner">
           <h2 class="title section-title popup-title">ваш фидбек</h2>
           <form action="#0" class="popup-form">
@@ -33,7 +35,6 @@
                   Несколько раз в год
                 </option>
               </select>
-              <span class="arrow"></span>
             </label>
             <div class="popup-form-label">
               Вы подписаны на e-mail рассылку?
@@ -83,7 +84,7 @@
     <header class="header">
       <div class="container header-container">
         <div class="menu-navigation">
-          <div class="mobile-menu menu-active"></div>
+          <button class="button mobile-menu menu-active"></button>
           <div class="logo-wrapper">
             <a href="" class="link logo-link">
               <svg
@@ -217,14 +218,14 @@
       <main class="main">
         <div class="post-list">
           <article class="post">
-            <figure class="post-image-wrapper">
+            <div class="post-image-wrapper">
               <img
                 src="./images/last-post1.jpg"
                 alt="10 мест, ради которых стоит
               проснуться на рассвете"
                 class="post-image"
               />
-            </figure>
+            </div>
             <div class="post-inner">
               <ul class="post-categories">
                 <li class="post-category tag">
@@ -235,7 +236,9 @@
                 </li>
               </ul>
               <h3 class="post-title title">
-                10 мест, ради которых стоит проснуться на рассвете
+                <a href="#0" class="post-title-link link"
+                  >10 мест, ради которых стоит проснуться на рассвете</a
+                >
               </h3>
               <address class="post-info">
                 <time class="post-date" datetime="2019-06-10">
@@ -252,13 +255,13 @@
             </div>
           </article>
           <article class="post">
-            <figure class="post-image-wrapper">
+            <div class="post-image-wrapper">
               <img
                 src="./images/last-post2.jpg"
                 alt="Йога для начинающих в домашних условиях"
                 class="post-image"
               />
-            </figure>
+            </div>
             <div class="post-inner">
               <ul class="post-categories">
                 <li class="post-category tag">
@@ -269,7 +272,9 @@
                 </li>
               </ul>
               <h3 class="post-title title">
-                Йога для начинающих в домашних условиях
+                <a href="#0" class="post-title-link link"
+                  >Йога для начинающих в домашних условиях</a
+                >
               </h3>
               <address class="post-info">
                 <time class="post-date" datetime="2019-06-10">
@@ -286,13 +291,13 @@
             </div>
           </article>
           <article class="post">
-            <figure class="post-image-wrapper">
+            <div class="post-image-wrapper">
               <img
                 src="./images/last-post3.jpg"
                 alt="Лучшие музыкальные фестивали этого лета"
                 class="post-image"
               />
-            </figure>
+            </div>
             <div class="post-inner">
               <ul class="post-categories">
                 <li class="post-category tag">
@@ -300,7 +305,9 @@
                 </li>
               </ul>
               <h3 class="post-title title">
-                Лучшие музыкальные фестивали этого лета
+                <a href="#0" class="post-title-link link"
+                  >Лучшие музыкальные фестивали этого лета</a
+                >
               </h3>
               <address class="post-info">
                 <time class="post-date" datetime="2019-06-10">
@@ -320,13 +327,13 @@
             </div>
           </article>
           <article class="post">
-            <figure class="post-image-wrapper">
+            <div class="post-image-wrapper">
               <img
                 src="./images/last-post4.jpg"
                 alt="Наукоёмкий подход к кулинарии"
                 class="post-image"
               />
-            </figure>
+            </div>
             <div class="post-inner">
               <ul class="post-categories">
                 <li class="post-category tag">
@@ -336,7 +343,11 @@
                   <a href="#0" class="post-link link">food</a>
                 </li>
               </ul>
-              <h3 class="post-title title">Наукоёмкий подход к кулинарии</h3>
+              <h3 class="post-title title">
+                <a href="#0" class="post-title-link link"
+                  >Наукоёмкий подход к кулинарии</a
+                >
+              </h3>
               <address class="post-info">
                 <time class="post-date" datetime="2019-06-10">
                   10 июня 2019
@@ -352,13 +363,13 @@
             </div>
           </article>
           <article class="post">
-            <figure class="post-image-wrapper">
+            <div class="post-image-wrapper">
               <img
                 src="./images/last-post5.jpg"
                 alt="делаем модные принты на подушках для интерьера"
                 class="post-image"
               />
-            </figure>
+            </div>
             <div class="post-inner">
               <ul class="post-categories">
                 <li class="post-category tag">
@@ -372,7 +383,9 @@
                 </li>
               </ul>
               <h3 class="post-title title">
-                делаем модные принты на подушках для интерьера
+                <a href="#0" class="post-title-link link"
+                  >Делаем модные принты на подушках для интерьера</a
+                >
               </h3>
               <address class="post-info">
                 <time class="post-date" datetime="2019-06-10">
@@ -399,12 +412,12 @@
           <h2 class="title section-title">новые посты</h2>
           <div class="latest-posts-list">
             <article class="latest-post">
-              <figure class="latest-post-image-wrapper">
+              <div class="latest-post-image-wrapper">
                 <img
                   src="./images/2.jpg"
                   alt="10 мест, ради которых стоит проснуться"
                 />
-              </figure>
+              </div>
               <div class="latest-post-info">
                 <address class="post-info">
                   <time class="post-date" datetime="2019-06-10">
@@ -419,27 +432,27 @@
               </div>
             </article>
             <article class="latest-post">
-              <figure class="latest-post-image-wrapper">
+              <div class="latest-post-image-wrapper">
                 <img src="./images/151.jpg" alt="Йога для домашних" />
-              </figure>
+              </div>
               <div class="latest-post-info">
                 <address class="post-info">
                   <time class="post-date" datetime="2019-06-10">
                     10 июня 2019
                   </time>
                 </address>
-                <h3 class="title post-title">
+                <h3 class="title post-title latest-post-title">
                   <a href="#0" class="link">Йога для домашних</a>
                 </h3>
               </div>
             </article>
             <article class="latest-post">
-              <figure class="latest-post-image-wrapper">
+              <div class="latest-post-image-wrapper">
                 <img
                   src="./images/45.jpg"
                   alt="как мы превратили классное место в балкон"
                 />
-              </figure>
+              </div>
               <div class="latest-post-info">
                 <address class="post-info">
                   <time class="post-date" datetime="2019-06-10">
@@ -454,9 +467,9 @@
               </div>
             </article>
             <article class="latest-post">
-              <figure class="latest-post-image-wrapper">
+              <div class="latest-post-image-wrapper">
                 <img src="./images/501.jpg" alt="Кулинарный подход к науке" />
-              </figure>
+              </div>
               <div class="latest-post-info">
                 <address class="post-info">
                   <time class="post-date" datetime="2019-06-10">
@@ -469,12 +482,12 @@
               </div>
             </article>
             <article class="latest-post">
-              <figure class="latest-post-image-wrapper">
+              <div class="latest-post-image-wrapper">
                 <img
                   src="./images/7.jpg"
                   alt="лучшие прически для распущенных волос"
                 />
-              </figure>
+              </div>
               <div class="latest-post-info">
                 <address class="post-info">
                   <time class="post-date" datetime="2019-06-10">
@@ -519,7 +532,7 @@
               />
             </label>
             <button type="submit" class="subscribe-button sidebar-button">
-              <span class="visually-hidden">подписаться</span>подписаться
+              подписаться
             </button>
           </form>
         </section>
@@ -592,7 +605,7 @@
         <h2 class="title section-title">наши изделия</h2>
         <div class="shop-cards">
           <article class="card">
-            <figure class="card-image-wrapper">
+            <div class="card-image-wrapper">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -611,7 +624,7 @@
                   alt="подушки на диван"
                 />
               </picture>
-            </figure>
+            </div>
             <div class="card-content">
               <h3 class="title card-title">подушки на диван</h3>
               <div class="card-description">
@@ -622,15 +635,19 @@
               </div>
               <div class="card-inner">
                 <div class="card-price">
-                  <div class="card-price-normal currency-ru">1000</div>
-                  <div class="card-price-current currency-ru">800</div>
+                  <div class="card-price-normal">
+                    1000 <span class="currency-ru">₽</span>
+                  </div>
+                  <div class="card-price-current">
+                    800 <span class="currency-ru">₽</span>
+                  </div>
                 </div>
                 <a href="#0" class="link link-to-shop">в магазин</a>
               </div>
             </div>
           </article>
           <article class="card">
-            <figure class="card-image-wrapper">
+            <div class="card-image-wrapper">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -649,7 +666,7 @@
                   alt="Кукла «Зайчик»"
                 />
               </picture>
-            </figure>
+            </div>
             <div class="card-content">
               <h3 class="title card-title">Кукла «Зайчик»</h3>
               <div class="card-description">
@@ -664,14 +681,16 @@
               </div>
               <div class="card-inner">
                 <div class="card-price">
-                  <div class="card-price-current currency-ru">3500</div>
+                  <div class="card-price-current">
+                    3500 <span class="currency-ru">₽</span>
+                  </div>
                 </div>
                 <a href="#0" class="link link-to-shop">в магазин</a>
               </div>
             </div>
           </article>
           <article class="card">
-            <figure class="card-image-wrapper">
+            <div class="card-image-wrapper">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -690,7 +709,7 @@
                   alt="Шестиугольная рамка"
                 />
               </picture>
-            </figure>
+            </div>
             <div class="card-content">
               <h3 class="title card-title">Шестиугольная рамка</h3>
               <div class="card-description">
@@ -703,8 +722,12 @@
               </div>
               <div class="card-inner">
                 <div class="card-price">
-                  <div class="card-price-normal currency-ru">500</div>
-                  <div class="card-price-current currency-ru">400</div>
+                  <div class="card-price-normal">
+                    500 <span class="currency-ru">₽</span>
+                  </div>
+                  <div class="card-price-current">
+                    400 <span class="currency-ru">₽</span>
+                  </div>
                 </div>
                 <a href="#0" class="link link-to-shop">в магазин</a>
               </div>

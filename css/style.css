@@ -199,23 +199,16 @@ textarea {
 
   -webkit-appearance: none;
   -moz-appearance: none;
+
+  background-image: url("../svg/form-arrows.svg");
+  background-size: 10px;
+  background-position: right 20px center;
+  background-repeat: no-repeat;
 }
 
 .label-select {
   position: relative;
   display: flex;
-}
-
-.arrow {
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-  width: 10px;
-  height: 45px;
-  background-image: url("../svg/form-arrows.svg");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 .select-form:focus {
@@ -321,12 +314,12 @@ textarea {
   width: 24px;
   height: 20px;
   margin-bottom: 185px;
+  border-style: none;
   border-top: 4px solid #ffffff;
   border-bottom: 4px solid #ffffff;
+  background-color: transparent;
 
   align-self: end;
-
-  cursor: pointer;
 }
 
 .menu-active {
@@ -341,7 +334,7 @@ textarea {
   background-color: #ffffff;
 
   position: relative;
-  top: 4px;
+  top: 0;
 }
 
 .header-title {
@@ -423,7 +416,7 @@ textarea {
 }
 
 .trend-tag {
-  line-height: 37px;
+  margin-bottom: 10px;
 }
 
 .trend-text {
@@ -438,12 +431,13 @@ textarea {
 /* main ==================== */
 
 .post-list {
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 40px;
 }
 
 .post {
-  padding-top: 35px;
-  padding-bottom: 25px;
   border-bottom: 4px solid #eff6f1;
 }
 
@@ -463,8 +457,6 @@ textarea {
 .post-title {
   margin-bottom: 20px;
   font-size: 16px;
-
-  cursor: pointer;
 }
 
 .post-title:hover {
@@ -490,6 +482,7 @@ textarea {
 
 .post-content {
   margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 .post-content p:nth-child(n + 2) {
@@ -704,11 +697,6 @@ textarea {
   font-size: 20px;
 }
 
-.currency-ru::after {
-  content: "\20BD";
-  margin-left: 5px;
-}
-
 .link-to-shop {
   text-transform: uppercase;
   font-weight: bold;
@@ -725,11 +713,12 @@ textarea {
 /* footer ==================== */
 
 .socials-wrapper {
-  height: 80px;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   background-color: #f4f7f6;
 }
@@ -873,12 +862,9 @@ textarea {
     max-width: 700px;
   }
 
-  .post {
-    padding-top: 40px;
-  }
-
   .post-title {
     font-size: 17px;
+    line-height: 22px;
   }
 
   .post-content {
@@ -929,13 +915,13 @@ textarea {
   }
 
   .header {
-    min-height: 450px;
+    min-height: inherit;
     background-image: url("../images/banner-bg.jpg");
   }
 
   .header-container {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 
     display: flex;
     flex-direction: column;
@@ -946,6 +932,7 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
   }
 
   .mobile-menu {
@@ -996,19 +983,25 @@ textarea {
     max-width: 790px;
   }
 
+  .post-list {
+    gap: 60px;
+  }
+
   .post {
-    padding-top: 50px;
     display: flex;
+    border-bottom: none;
   }
 
   .post-image-wrapper {
     width: 380px;
     margin-right: 30px;
+    margin-bottom: 0;
     flex-shrink: 0;
   }
 
   .post-title {
     font-size: 20px;
+    line-height: 24px;
   }
 
   .latest-post-title {

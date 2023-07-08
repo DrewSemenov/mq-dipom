@@ -520,6 +520,11 @@ textarea {
   justify-content: start;
 }
 
+.latest-post .latest-post-title {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 /* search ===== subscribe ===== */
 
 .sidebar-field {
@@ -877,10 +882,6 @@ textarea {
     margin-left: 30px;
   }
 
-  .latest-post-title {
-    font-size: 14px;
-  }
-
   .shop-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1002,10 +1003,6 @@ textarea {
   .post-title {
     font-size: 20px;
     line-height: 24px;
-  }
-
-  .latest-post-title {
-    font-size: 14px;
   }
 
   .shop-cards {
